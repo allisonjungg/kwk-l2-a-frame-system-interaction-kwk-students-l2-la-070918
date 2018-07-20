@@ -1,19 +1,42 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.1/dist/aframe-extras.min.js"></script>
-    <script src="./entities/Thunderdome.js"></script>
-    <script src="./entities/Ball.js"></script>
-    <script src="./entities/Player.js"></script>
-    <script src="./systems/Game.js"></script>
   </head>
 
   <body>
 
-    <a-scene light="defaultLightsEnabled: false" physics="debug: true">
-
+    <a-scene light="defaultLightsEnabled: false">
+      <a-sky src=""></a-sky>
+       <a-sphere src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzWU3w-6owSfA6sGB9bhqBeCAKCtzMswiYwbDmMRj93Jx2V9u" position = "0 0 0" radius = "6">  
+      <a-animation
+          attribute="rotation"
+          dur="10000"
+          fill="none"
+          from="0 0 0"
+          to="0 -360 0"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+        </a-sphere>
+        
+        <!--<a-torus  position ="0 0 0" radius= "7" radius-tubular = ".07" src="http://cdn.shopify.com/s/files/1/1279/2135/products/il_fullxfull.1292754687_8rbx_grande.jpg?v=1500506791">-->
+        <!--  <star>-->
+        <!--    <a-sphere position ="3 3 -1" radius="1" color=yellow></a-sphere>-->
+        <!--  </star>-->
+        <!--  <a-animation-->
+        <!--   attribute="rotation"-->
+        <!--  dur="100000"-->
+        <!--  fill="none"-->
+        <!--  from="0 0 0"-->
+        <!--  to="0 360 0"-->
+        <!--  easing="linear"-->
+        <!--  repeat="indefinite">-->
+        <!--  </a-animation>-->
+        <!--</a-torus>-->
+        
+    
       <a-entity light="type: ambient"></a-entity>
-      <a-entity id="camera" camera look-controls wasd-controls position="0 0 20"></a-entity>
+       <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
 
     </a-scene>
 
@@ -21,3 +44,46 @@
   </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>-->
+<!--  <head>-->
+<!--    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>-->
+<!--    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.1/dist/aframe-extras.min.js"></script>-->
+<!--    <script src="./entities/Thunderdome.js"></script>-->
+<!--    <script src="./entities/Ball.js"></script>-->
+<!--    <script src="./entities/Player.js"></script>-->
+<!--    <script src="./systems/Game.js"></script>-->
+<!--  </head>-->
+
+<!--  <body>-->
+
+<!--    <a-scene light="defaultLightsEnabled: false" physics="debug: true">-->
+
+<!--      <a-entity light="type: ambient"></a-entity>-->
+<!--      <a-entity id="camera" camera look-controls wasd-controls position="0 0 20"></a-entity>-->
+
+<!--    </a-scene>-->
+
+<!--    <script src="./index.js"></script>-->
+<!--  </body>-->
+
+<!--</html>-->
